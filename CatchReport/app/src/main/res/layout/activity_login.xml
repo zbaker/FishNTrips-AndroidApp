@@ -1,0 +1,89 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.app.fish.catchreport.Login"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/fish_banner_white"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:width="320dp"
+        android:hint="Email"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/background_rounded_corners_blue"
+        android:layout_below="@+id/imageView"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:width="320dp"
+        android:hint="Password"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/background_rounded_corners_blue"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Log Me In"
+        android:id="@+id/button"
+        android:onClick="buttonOnClick"
+        android:visibility="visible"
+        android:layout_alignRight="@+id/editText"
+        android:width="150dp"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/submit_button_rounded"
+        android:textColor="#ffffff"
+        android:textSize="18dp"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/progressBar"
+        android:layout_alignTop="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Register"
+        android:id="@+id/button8"
+        android:onClick="buttonOnClick2"
+        android:visibility="visible"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignLeft="@+id/editText"
+        android:width="150dp"
+        android:background="@drawable/submit_button_rounded"
+        android:textColor="#ffffff"
+        android:textSize="18dp"/>
+
+
+</RelativeLayout>
+</ScrollView>
